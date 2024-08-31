@@ -1,4 +1,4 @@
-{% set version = '0.1.1' %}
+{% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/b64_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/b64/b64_{{ version }}.tar.gz
-  sha256: 331297f6829e4ae2543ad3b5f084be376cfa8191be8757b1f1bc0b323de6d671
+  sha256: ca5a9aea35716781b3cb180f9dd089bfe783c1bde84b723684ee333763178f64
   patches:
     - 0001-Collect-built-targets.patch
 
@@ -52,11 +52,8 @@ about:
   home: https://extendr.github.io/b64/
   dev_url: https://github.com/extendr/b64
   license: MIT
-  summary: Provides a fast, lightweight, and vectorized base 64 engine to encode and decode character
-    and raw vectors as well as files stored on disk.  Common base 64 alphabets are supported
-    out of the box including the standard, URL-safe, bcrypt, crypt, 'BinHex', and IMAP-modified
-    UTF-7 alphabets. Custom engines can be created to support unique base 64 encoding
-    and decoding needs.
+  summary: Provides a fast, lightweight, and vectorized base 64 engine to encode and decode character and raw vectors as well as files stored on disk.  Common base 64 alphabets are supported out of the box including the standard, URL-safe, bcrypt, crypt, 'BinHex', and IMAP-modified UTF-7 alphabets. Custom engines can be
+    created to support unique base 64 encoding and decoding needs.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
