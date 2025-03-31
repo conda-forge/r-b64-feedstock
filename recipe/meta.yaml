@@ -1,4 +1,4 @@
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/b64_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/b64/b64_{{ version }}.tar.gz
-  sha256: f4ca6c403e9679f62474da25ac7a488f73c8a73926d4b17218d176f70506992a
+  sha256: 4752a8f539213f0c48d09ca37dc7dd005749e4a51580b7f16c044bbd78672f1d
   patches:
     - 0001-Collect-built-targets.patch
 
