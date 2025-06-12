@@ -10,8 +10,6 @@ source:
     - {{ cran_mirror }}/src/contrib/b64_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/b64/b64_{{ version }}.tar.gz
   sha256: 390d6a87c0115e75ecd9f0e4e91f4eb3397f2e32030f48a571d7e97b07628ab1
-  patches:
-    - 0001-Collect-built-targets.patch
 
 build:
   number: 0
